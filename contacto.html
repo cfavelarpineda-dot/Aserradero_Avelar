@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Aserradero Avelar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <img class="brand-logo" src="imagenes/logo aserradero.png" alt="Logo de Aserradero Avelar" />
+          <div class="brand-mark">
+            <span>ASERRADERO</span>
+            <span>AVELAR</span>
+          </div>
+          <small>DESDE 1976 · SIGUATEPEQUE</small>
+        </div>
+        <nav class="main-nav" aria-label="Menu principal">
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="catalogo.html">Productos</a>
+          <a href="contacto.html" class="active">Cotizaciones</a>
+          <a href="sobre-nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <span class="country-mark" aria-hidden="true">🇭🇳</span>
+          <a class="primary-btn small" href="contacto.html">WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="container page-hero narrow">
+        <div class="eyebrow light">Atención directa y despachos</div>
+        <h1>Contacto, <span>ubicación y cobertura</span></h1>
+        <p>
+          Estamos listos para atender sus pedidos de madera de pino en obra,
+          instalaciones, estructuras o carpintería. Coordine su entrega con nosotros.
+        </p>
+      </section>
+
+      <section class="container contact-card-grid">
+        <div class="mini-contact-card">
+          <img src="imagenes/ubicacion.jpg" alt="Vista de la ubicación del aserradero" loading="lazy" />
+          <span>📍</span>
+          <strong>Ubicación</strong>
+          <p><a class="js-address" href="#" target="_blank" rel="noopener noreferrer">Granja D'Elia, Barrio Paso Hondo, 300m al sur de, 12111 Siguatepeque, Honduras</a></p>
+        </div>
+        <div class="mini-contact-card">
+          <img src="imagenes/el rojo.jpg" alt="Camión rojo cargado con madera" loading="lazy" />
+          <span>📱</span>
+          <strong>WhatsApp</strong>
+          <p><a href="https://wa.me/50432517745" target="_blank" rel="noopener noreferrer">+504 3251-7745</a></p>
+        </div>
+        <div class="mini-contact-card">
+          <img src="imagenes/sin cascara.jpg" alt="Camión cargado de madera sin corteza" loading="lazy" />
+          <span>✉️</span>
+          <strong>Correo</strong>
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aserraderoavelarhn@gmail.com" target="_blank" rel="noopener noreferrer">aserraderoavelarhn@gmail.com</a></p>
+        </div>
+        <div class="mini-contact-card">
+          <img src="imagenes/local.jpg" alt="Vista del local del aserradero" loading="lazy" />
+          <span>🚚</span>
+          <strong>Local</strong>
+          <p><a class="js-address" href="#" target="_blank" rel="noopener noreferrer">Granja D'Elia, Barrio Paso Hondo, 300m al sur de, 12111 Siguatepeque, Honduras</a></p>
+        </div>
+      </section>
+
+      <section class="container contact-layout">
+        <div class="form-panel">
+          <h2>Envíe su requerimiento</h2>
+          <form class="contact-form">
+            <div class="field-row two-col">
+              <label>Nombre / Empresa<input type="text" name="name" autocomplete="name" placeholder="Ej. Juan Pérez" required /></label>
+              <label>Teléfono / WhatsApp<input type="tel" name="phone" autocomplete="tel" placeholder="+504 9999-9999" required /></label>
+            </div>
+            <div class="field-row two-col">
+              <label>Correo electrónico<input type="email" name="email" autocomplete="email" placeholder="contacto@correo.com" /></label>
+              <label>Tipo de despacho<select name="dispatch"><option>Retiro en local</option><option>Entrega a obra</option></select></label>
+            </div>
+            <label>Detalle del pedido<input type="text" name="details" placeholder="Indique cantidades, medidas y destino" required /></label>
+            <p class="form-hint">Al presionar el botón se abrirá WhatsApp con un mensaje ya redactado a partir de estos datos. Usted debe revisarlo y enviarlo manualmente desde WhatsApp: este formulario no envía la cotización por sí mismo.</p>
+            <button class="primary-btn" type="submit">Continuar en WhatsApp</button>
+            <div class="whatsapp-fallback" hidden>
+              <p class="form-hint">Si WhatsApp no se abrió automáticamente, copie este mensaje y envíelo usted mismo al número de contacto del aserradero:</p>
+              <textarea class="whatsapp-fallback-text" rows="6" readonly></textarea>
+              <div class="review-form-actions">
+                <button type="button" class="secondary-btn small copy-whatsapp-message">Copiar mensaje</button>
+                <span class="copy-status" aria-live="polite"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <aside class="sidebar-panel">
+          <div class="location-box">
+            <span class="eyebrow light">Ubicación</span>
+            <h3>Instalaciones en local principal</h3>
+            <p><a class="js-address" href="#" target="_blank" rel="noopener noreferrer">Granja D'Elia, Barrio Paso Hondo, 300m al sur de, 12111 Siguatepeque, Honduras</a></p>
+          </div>
+          <div class="hours-box">
+            <span class="eyebrow light">Horario de local</span>
+            <ul>
+              <li>Lunes a Viernes <span>7:00 a.m. - 5:00 p.m.</span></li>
+              <li>Sábados <span>7:00 a.m. - 12:00 p.m.</span></li>
+              <li>Domingos <span>Cerrado</span></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="brand-mark small"><span>ASERRADERO</span><span>AVELAR</span></div>
+          <p>Tradición y experiencia...</p>
+        </div>
+        <div>
+          <h4>Productos</h4>
+          <ul><li><a href="catalogo.html">Madera</a></li><li><a href="catalogo.html">Tablas</a></li></ul>
+        </div>
+        <div>
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Venta de madera aserrada y pedidos por medidas</a></li>
+            <li><a href="servicios.html">Venta de madera en rollo</a></li>
+            <li><a href="servicios.html">Venta de aserrín</a></li>
+            <li><a href="servicios.html">Alquiler de maquinaria para aprovechamientos forestales</a></li>
+            <li><a href="servicios.html">Fletes para todo tipo de carga</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul><li><a href="tel:+50432517745">+504 3251-7745</a></li><li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aserraderoavelarhn@gmail.com" target="_blank" rel="noopener noreferrer">aserraderoavelarhn@gmail.com</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><div class="container"><span>© 2026 Aserradero Avelar</span></div></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
